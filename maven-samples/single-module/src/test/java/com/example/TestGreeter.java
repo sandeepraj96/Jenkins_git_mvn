@@ -27,7 +27,20 @@ public class TestGreeter {
     assertThat(greeter.greet(someone), containsString(someone));
   }
   
+  @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
+    String someone = "sandeep_1996";
 
+    assertThat(greeter.greet(someone), containsString(someone));
+  }
+
+    @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
+    String someone = "mew";
+
+    assertThat(greeter.greet(someone), containsString(someone));
+  }
+  
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
